@@ -81,7 +81,7 @@ Upload these 3 files to the [`editors`](editors/) folder.
 
 What terminal editor will be your preferred choice of use? How did you make your decision?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> nano because it was the easiest to understand.
 
 --
 
@@ -89,6 +89,6 @@ What terminal editor will be your preferred choice of use? How did you make your
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Sublime Text. I made this decision because of its popularity with new programmers, and I am a new programmer. I thought the 'multiple selections' feature was interesting as it gives the user the ability to change multiple pieces of code at the same time and therefore work much faster. The keyboard shortcut for this feture is shift+command+L which splits a line into separate lines and allows the user to edit them simultaneously. It is possible to customize the editor by going to Preferences->Settings, where settings can be customized by editing text files.
 
  
