@@ -19,7 +19,16 @@ Here's a list of items with which you should be familiar:
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do.  (Use the 8 items above and add a couple of your own.)  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > 1. show current working directory path: $ pwd 
+2. creating a directory: **$ mkdir**, and add **-p** to create a file path.
+3. deleting a directory: **$ rmdir** , and add **-p** to remove an entire file path.
+4. creating a file using `touch` command: **$ touch <filename.ext>** , creates an empty file.
+5. deleting a file: **$ rm <filename>** , or **$ rm -rf <directory>** (-rf recursively deletes directory + all files)
+6. renaming a file (i.e. move file): **$ mv <filename> <new_filename> **.
+7. listing hidden files: 
+8. copying a file from one directory to another: $ cp <filename> <directory> , or $ cp -r <directory> <directory>, also $ cp  <filename> <filename> .
+9. 
+10. 
 
 ---
 
