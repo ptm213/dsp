@@ -20,20 +20,20 @@ Here's a list of items with which you should be familiar:
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do.  (Use the 8 items above and add a couple of your own.)  
 
 > > 1. show current working directory path: $ pwd 
-2. creating a directory: $ mkdir, and add -p to create a file path.
-3. deleting a directory: $ rmdir , and add -p to remove an entire file path.
-4. creating a file using `touch` command: $ touch <filename.ext> , creates an empty file.
-5. deleting a file: $ rm <filename> , or $ rm -rf <directory> (-rf recursively deletes directory + all files)
-6. renaming a file (i.e. move file): $ mv <filename> <new_filename>.
-7. listing hidden files: use command ls -a to list all (hidden and unhidden) contents of current working directory. Hidden files begin with a dot (.)
-8. copying a file from one directory to another: $ cp <filename> <directory> , or $ cp -r <directory> <directory>, also $ cp  <filename> <filename> .
-9. viewing a file (less, more, cat)
- - $ less <filename> to display contents of a file on an in-terminal reader. Press "q" to quit.
- - $ more <filename> and cat <filename> will print contents of file directly to terminal.
-10. finding multiple files using wildcard (find, *) and performing a command on them (>, <, |): 
-  - for example: $ cat *.txt > bigfile.txt , which writes all the contents of the .txt files in current working directory to a new file.
- - $ rm *.txt removes all .txt files
- - $ find <directory or "." for cwd> -name "*.txt" -print > PaulM/ds/metis/temp/somefile.txt , which writes all names of text files found in the directory to a somefile.txt.
+> 2. creating a directory: $ mkdir, and add -p to create a file path.
+> 3. deleting a directory: $ rmdir , and add -p to remove an entire file path.
+> 4. creating a file using `touch` command: $ touch <filename.ext> , creates an empty file.
+> 5. deleting a file: $ rm <filename> , or $ rm -rf <directory> (-rf recursively deletes directory + all files)
+> 6. renaming a file (i.e. move file): $ mv <filename> <new_filename>.
+> 7. listing hidden files: use command ls -a to list all (hidden and unhidden) contents of current working directory. Hidden files begin with a dot (.)
+> 8. copying a file from one directory to another: $ cp <filename> <directory> , or $ cp -r <directory> <directory>, also $ cp  <filename> <filename> .
+> 9. viewing a file (less, more, cat)
+>  - $ less <filename> to display contents of a file on an in-terminal reader. Press "q" to quit.
+>  - $ more <filename> and cat <filename> will print contents of file directly to terminal.
+> 10. finding multiple files using wildcard (find, *) and performing a command on them (>, <, |): 
+>  - for example: $ cat *.txt > bigfile.txt , which writes all the contents of the .txt files in current working directory to a new file.
+>  - $ rm *.txt removes all .txt files
+>  - $ find <directory or "." for cwd> -name "*.txt" -print > PaulM/ds/metis/temp/somefile.txt , which writes all names of text files found in the directory to a somefile.txt.
 
 ---
 
