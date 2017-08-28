@@ -25,10 +25,15 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
 4. creating a file using `touch` command: $ touch <filename.ext> , creates an empty file.
 5. deleting a file: $ rm <filename> , or $ rm -rf <directory> (-rf recursively deletes directory + all files)
 6. renaming a file (i.e. move file): $ mv <filename> <new_filename>.
-7. listing hidden files: 
+7. listing hidden files: use command ls -a to list all (hidden and unhidden) contents of current working directory. Hidden files begin with a dot (.)
 8. copying a file from one directory to another: $ cp <filename> <directory> , or $ cp -r <directory> <directory>, also $ cp  <filename> <filename> .
-9. 
-10. 
+9. viewing a file (less, more, cat)
+ - $ less <filename> to display contents of a file on an in-terminal reader. Press "q" to quit.
+ - $ more <filename> and cat <filename> will print contents of file directly to terminal.
+10. finding multiple files using wildcard (find, *) and performing a command on them (>, <, |): 
+  - for example: $ cat *.txt > bigfile.txt , which writes all the contents of the .txt files in current working directory to a new file.
+ - $ rm *.txt removes all .txt files
+ - $ find <directory or "." for cwd> -name "*.txt" -print > PaulM/ds/metis/temp/somefile.txt , which writes all names of text files found in the directory to a somefile.txt.
 
 ---
 
@@ -43,7 +48,13 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > `ls`  - lists files and directories in the current working directory
+`ls -a`  - lists all (hidden and unhidden) files and directories
+`ls -l`  - lists detailed information about directories/files, including: permissions, owner of file and its permissions, size, and last date modified
+`ls -lh`  - adding a '-h' makes the list 'human readable' (e.g. size now has units, B/K/etc.)
+`ls -lah`  - lists all hidden files/directories, in human readable format.
+`ls -t`  - sorted list by most recently modified.
+`ls -Glp`  - '-G' enables color output and '-p' adds a '/' to directory names
 
 ---
 
@@ -51,7 +62,12 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > 
+1. ls -m, which displays the names as comma separated lists
+2. ls -1, which displays each entry on a line
+3. ls -p, which displays directories with a '/' at the end
+4. ls -r, displays all contents in reverse order
+5. ls -R, displays all subdirectories as well
 
 ---
 
@@ -59,7 +75,10 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > xargs allows you to apply a command on a list of arguments, in one line of code. 
+ - For example, to find all all .txt files and move them to a directory called "/text_files":
+  * Type: find -name " \*.txt" -type f -print | xargs -O -I {} mv {} ~/text_files
+ - This line of code finds all .txt files and then applies the mv command to each item in that list.
 
  
 
