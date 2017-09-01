@@ -29,12 +29,15 @@ How are Python lists and sets similar and different? Give examples of using both
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
 >> The lambda operator is a way to create annonymous "throw away" functions. A lambda function consists of an argument list and an expression. It is used with the map() and filter() functions. For example, if you have a list of integers, lst = \[1,2,3,4], you can multiple each element in that list by simply using lambda: list(map(lambda x : x\*2, lst). 
+
 >> The lambda function can also be used as the key to the sorted() function. This means that you can specify how a sequence is sorted based on some lambda criteria. For example, if you had the sequence: 
+
 >> student_tuples = \[
 >>        ('john', 'A', 15),
 >>        ('jane', 'B', 12),
->>        ('dave', 'B', 10),
+>>        ('dave', 'B', 10)
 >> ]
+
 >> You could sort on age (i.e. the 3rd item): sorted(student_tuples, key = lambda student : student\[2]). In this line of code, the lambda function tells the key to refer to the item in index position 2 of the list student_tuples. 
 
 
