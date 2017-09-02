@@ -47,7 +47,19 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> List comprehension is an elegant way to transform a list (or any sequence) into another list/sequence. It has similar capabilities to the lambda/map/filter techniques, but is much easier to understand. 
+
+>> For example, you can easily transform a list of integers (i.e. numbers = \[1,2,3,4]) into a new list where each odd value is doubled using list comprehension (i.e. doubled_odd = \[2,6]).
+>> doubled_odd = \[x\*2 for x in numbers if x % 2 == 1]
+
+>> Alternatively, you could use map and filter to do the same thing: 
+>> numbers_odd = list(filter(lambda x: x%2 == 1, numbers))
+>> doubled_odd = list(map(lambda x: x\*2, numbers_odd)) 
+
+>> Set comprehensions are useful for creating a list without duplicates and can be executed with the use of curly brackets {}. For example, given a sequence of "words", you can easily create a unique list of first letters using the following code: first_letters = {w\[0] for w in words}.
+
+>> Dictionary comprehension can be used to create a new_dictionary with old_dictionary keys and values switched. 
+>> new_dictionary = {value:key for key, value in old_dictionary.items()}
 
 ---
 
