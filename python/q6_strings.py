@@ -18,7 +18,12 @@ def donuts(count):
     >>> donuts(99)
     'Number of donuts: many'
     """
-    raise NotImplementedError
+    if type(count) != int or count < 0:
+        return "Input is not valid"
+    elif count < 10:
+        return "Number of dounts: {}".format(count)
+    else:
+        return "Number of donuts: many"
 
 
 def both_ends(s):
@@ -37,9 +42,12 @@ def both_ends(s):
     >>> both_ends('xyz')
     'xyyz'
     """
-    raise NotImplementedError
+    if len(s) >= 2:
+            return s[:2]+ s[-2:]
+        else:
+            return ''
 
-
+        
 def fix_start(s):
     """
     Given a string s, return a string where all occurences of its
@@ -56,7 +64,14 @@ def fix_start(s):
     >>> fix_start('donut')
     'donut'
     """
-    raise NotImplementedError
+    star = s[0]
+    res = [star]
+    for i in s[1:]:
+        if i == star:
+            res.append("*")
+        else:
+            res.append(i)
+    return ''.join(res)
 
 
 def mix_up(a, b):
@@ -74,7 +89,10 @@ def mix_up(a, b):
     >>> mix_up('pezzy', 'firm')
     'fizzy perm'
     """
-    raise NotImplementedError
+    a, b = list(a), list(b)
+    a[:2], b[:2] = b[:2], a[:2]
+    a, b = ''.join(a), ''.join(b)
+    return a + ' ' + b
 
 
 def verbing(s):
@@ -91,7 +109,13 @@ def verbing(s):
     >>> verbing('do')
     'do'
     """
-    raise NotImplementedError
+    if s[-3:] == 'ing':
+        return s + 'ly'
+    elif len(s) >= 3 :
+        return s + 'ing'
+    else:
+        return s
+
 
 
 def not_bad(s):
@@ -111,7 +135,23 @@ def not_bad(s):
     >>> not_bad("It's bad yet not")
     "It's bad yet not"
     """
-    raise NotImplementedError
+    string = ''.join([char for char in s if char not in '?!']) # remove "!" if exists
+    string = string.split(' ')
+    
+    try:
+        index_not = string.index('not')
+        index_bad = string.index('bad')
+    except:
+        return s
+        
+    if index_bad > index_not: # "bad" follows after "not"
+        out = ' '.join(string[:index_not]) + " good"    
+        if s[-1:] == "!":
+            return out + "!"
+        else:
+            return out 
+    else:
+        return s
 
 
 def front_back(a, b):
@@ -130,4 +170,12 @@ def front_back(a, b):
     >>> front_back('Kitten', 'Donut')
     'KitDontenut'
     """
-    raise NotImplementedError
+    mid_a = len(a)//2 # find string a mid-point
+    a_front = a[:-mid_a]
+    a_back = a[-mid_a:]
+    
+    mid_b = len(b)//2 # string b mid-point
+    b_front = b[:-mid_b]
+    b_back = b[-mid_b:]
+
+    return a_front + b_front + a_back + b_back
