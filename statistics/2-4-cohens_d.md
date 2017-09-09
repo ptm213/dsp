@@ -1,7 +1,7 @@
 [Think Stats Chapter 2 Exercise 4](http://greenteapress.com/thinkstats2/html/thinkstats2003.html#toc24) (Cohen's d)
 
 >> 
-
+```python
 # Import modules
 from __future__ import print_function, division
 
@@ -16,10 +16,10 @@ import random
 
 def CohenEffectSize(group1, group2):
     """Computes Cohen's effect size for two groups.
-    
+
     group1: Series or DataFrame
     group2: Series or DataFrame
-    
+
     returns: float if the arguments are Series;
              Series if the arguments are DataFrames
     """
@@ -66,3 +66,4 @@ print("Difference between total weight means of firsts and others;", firsts_tota
 # Computer Cohen d of firsts vs. others
 
 CohenEffectSize(firsts_totalwgt_lb, others_totalwgt_lb)
+```
