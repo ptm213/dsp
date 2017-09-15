@@ -93,7 +93,9 @@ Elvis Presley had a twin brother who died at birth.  What is the probability tha
 ### Q6. Bayesian &amp; Frequentist Comparison  
 How do frequentist and Bayesian statistics compare?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Given an experiment, Frequentists use an observed outcome to create a fixed model, and will describe the population based on that fixed model. Bayesians, on the other hand, assume that the observed outcome of this experiement is a fixed value (one of many possibilities), and that models which can describe this outcome will vary around that fixed value. 
+>> Bayesian considers prior information before coming to a conclusion. For example, a Frequentist doctor would diagnose a patient by asking questions and inspecting the patient, while a Bayesian doctor would have the same approach but would also consider the patient's medical history before making a diagnosis. 
+ >> The two approaches also differ on "Nuisance parameters": Bayesian statistics allows the nuisance parameter to vary through marginalization - which means that a Bayesian would acknowledge that the observed probability of an event may not be the true probability for the population, while Frequentists assume the observed probability can be used to describe the probability of an event for the population.
 
 ---
 
